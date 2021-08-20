@@ -60,6 +60,13 @@ public class ItemFragment extends Fragment {
                 "아워홈 지리산수 핑크/500ml/30개", "6,500", 4.9f, "(9999+)",
                 getResources().getDrawable(R.drawable.water2)
         ));
+        itemAdapter.setOnItemClickListener(new ItemAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ItemAdapter.ViewHolder holder, View view, int position) {
+                // Fragment transaction to details page
+                ((MainActivity)getActivity()).fragmentTranslation(new ItemDetailsFragment(), true);
+            }
+        });
         binding.recyclerItem.setAdapter(itemAdapter);
     }
 

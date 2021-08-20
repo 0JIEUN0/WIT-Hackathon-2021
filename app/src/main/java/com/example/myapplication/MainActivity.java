@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    void fragmentTranslation(Fragment requestFragment, Boolean addBackStack){
+    public void fragmentTranslation(Fragment requestFragment, Boolean addBackStack){
         Log.d("MainActivity", requestFragment.getClass().toString());
         FragmentTransaction fragmentTranslation = getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, requestFragment);
