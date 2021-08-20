@@ -6,42 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    https://github.com/QJIEUN0/WIT-Hackathon-2021.git
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        app:menu="@menu/menu_bottom"
+        app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="415dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="77dp"
-        android:layout_height="31dp"
-        android:text="기부쇼핑몰"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="72dp" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
