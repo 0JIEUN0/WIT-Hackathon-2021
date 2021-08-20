@@ -40,6 +40,10 @@ public class ItemDetailsFragment extends Fragment {
         removeBottomView();
     }
 
+    private void attachBottomView() {
+        ((MainActivity)getActivity()).getNav().setVisibility(View.VISIBLE);
+    }
+
     private void removeBottomView() {
         ((MainActivity)getActivity()).getNav().setVisibility(View.GONE);
     }
@@ -63,6 +67,7 @@ public class ItemDetailsFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        attachBottomView();
         binding = null;
     }
 }
