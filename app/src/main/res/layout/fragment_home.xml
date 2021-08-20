@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:iconifiedByDefault="false"
-                android:queryHint="도물에서 검색하세요!"
+                android:queryHint="도몰에서 검색하세요!"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/search_view_round"
                 android:queryBackground="@null"
