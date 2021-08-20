@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment() {
         binding.bottomMenu.setSelectedItemId(R.id.bottomMenu);
-        fragmentTranslation(new ItemFragment(), false);
+        fragmentTranslation(new HomeFragment(), false);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomMenu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -55,5 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.container, requestFragment);
         if(addBackStack) fragmentTranslation.addToBackStack(null);
         fragmentTranslation.commit();
+    }
+
+    public BottomNavigationView getNav() {
+        return binding.bottomMenu;
     }
 }

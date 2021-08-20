@@ -37,6 +37,11 @@ public class ItemDetailsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         initListener();
+        removeBottomView();
+    }
+
+    private void removeBottomView() {
+        ((MainActivity)getActivity()).getNav().setVisibility(View.GONE);
     }
 
     private void initListener() {
