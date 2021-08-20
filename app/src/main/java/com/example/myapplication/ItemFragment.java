@@ -63,12 +63,12 @@ public class ItemFragment extends Fragment {
                 getResources().getDrawable(R.drawable.water2)
         ));
         itemAdapter.addItem(new Item(
-                "삼다수/500ml/12개", "5,000", 4.8f, "(9999+)",
-                getResources().getDrawable(R.drawable.water1)
+                "몽샵 몽베스트 프리미엄 생수 미니/330ml/40개", "12,000", 4.5f, "(9999+)",
+                getResources().getDrawable(R.drawable.water3)
         ));
         itemAdapter.addItem(new Item(
-                "아워홈 지리산수 핑크/500ml/30개", "6,500", 4.9f, "(9999+)",
-                getResources().getDrawable(R.drawable.water2)
+                "롯데 아이시스 ECO 무라벨/2L/6개", "3,800", 4.9f, "(9999+)",
+                getResources().getDrawable(R.drawable.water4)
         ));
         itemAdapter.setOnItemClickListener(new ItemAdapter.OnItemClickListener() {
             @Override
@@ -98,6 +98,7 @@ public class ItemFragment extends Fragment {
                 = new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
         binding.recyclerCapacity.setLayoutManager(layoutManager2);
         FilterAdapter capacityAdapter = new FilterAdapter();
+        capacityAdapter.addItem("500ml 미만");
         capacityAdapter.addItem("500ml");
         capacityAdapter.addItem("2L");
         binding.recyclerCapacity.setAdapter(capacityAdapter);
