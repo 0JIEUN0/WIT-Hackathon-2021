@@ -178,6 +178,7 @@
 
     <!-- 2 기부내역 -->
     <LinearLayout
+        android:id="@+id/donateInfoBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
