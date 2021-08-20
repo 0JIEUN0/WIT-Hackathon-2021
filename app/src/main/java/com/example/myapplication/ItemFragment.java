@@ -37,6 +37,16 @@ public class ItemFragment extends Fragment {
 
         initFilterRecyclerView();
         initItemRecyclerView();
+        initListener();
+    }
+
+    private void initListener() {
+        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
     }
 
     private void initItemRecyclerView() {
