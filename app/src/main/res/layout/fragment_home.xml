@@ -271,7 +271,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="20dp"/>
 
             android:textSize="14sp"
             android:text="매월 약정된 금액으로 후원하는 방법입니다.\n후원금은 도움이 필요한 이웃들을 위해\n소중히 사용됩니다."
@@ -288,7 +288,7 @@
                 android:text="상세보기">
             </TextView>
             <ImageButton
-                android:id="@+id/detail"
+                android:id="@+id/detail2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_chevron_right_24"
