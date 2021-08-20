@@ -30,6 +30,19 @@ public class MyPageFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // code
+        initListener();
+    }
+
+    private void initListener() {
+        binding.donateInfoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Fragment transaction to donate details page
+                ((MainActivity)getActivity()).fragmentTranslation(
+                    new MyDonateFragment(), true
+                );
+            }
+        });
     }
 
     @Override

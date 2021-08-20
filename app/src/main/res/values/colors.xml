@@ -6,4 +6,5 @@
     <color name="colorPrimaryDark">#339798</color>
     <color name="gray_light">#F3F3F3</color>
     <color name="gray_dark">#959595</color>
+    <color name="gray_basic">#B8B8B8</color>
 </resources>

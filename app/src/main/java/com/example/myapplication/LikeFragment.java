@@ -32,8 +32,6 @@ public class LikeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // code
-        binding.textView.setText("Change");
-        Log.d("this0-=-", binding.textView.getText().toString());
     }
 
     @Override
