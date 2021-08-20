@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/box_gray_radius"
     android:text="필터"
+    android:textColor="@color/gray_basic"
     android:paddingVertical="5dp"
     android:paddingHorizontal="10dp"
     android:layout_margin="5dp">
