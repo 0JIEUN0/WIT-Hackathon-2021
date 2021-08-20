@@ -6,36 +6,31 @@
         android:id="@+id/menuHome"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="홈"
-        app:cnb_iconTintMode="src_in" />
+        android:title="홈" />
 
     <item
         android:id="@+id/menuSearch"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="검색"
-        app:cnb_iconTintMode="src_in"
         />
 
     <item
         android:id="@+id/menuLike"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_favorite_border_24"
-        android:title="찜"
-        app:cnb_iconTintMode="src_in" />
+        android:title="찜" />
 
     <item
         android:id="@+id/menuList"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_playlist_add_check_24"
-        android:title="구매내역"
-        app:cnb_iconTintMode="src_in" />
+        android:title="구매내역" />
 
     <item
         android:id="@+id/menuUser"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_person_24"
-        android:title="마이페이지"
-        app:cnb_iconTintMode="src_in" />
+        android:title="마이페이지" />
 
 </menu>
