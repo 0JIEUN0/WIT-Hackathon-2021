@@ -29,6 +29,19 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // code
+        initListener();
+    }
+
+    private void initListener() {
+        binding.waterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)getActivity()).fragmentTranslation(
+                        new ItemFragment(),
+                        true
+                );
+            }
+        });
     }
 
     @Override
