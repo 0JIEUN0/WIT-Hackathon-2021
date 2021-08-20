@@ -49,11 +49,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    void fragmentTranslation(Fragment requestFragment, Boolean addBackStack){
+    public void fragmentTranslation(Fragment requestFragment, Boolean addBackStack){
         Log.d("MainActivity", requestFragment.getClass().toString());
         FragmentTransaction fragmentTranslation = getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, requestFragment);
         if(addBackStack) fragmentTranslation.addToBackStack(null);
         fragmentTranslation.commit();
+    }
+
+    public BottomNavigationView getNav() {
+        return binding.bottomMenu;
     }
 }
