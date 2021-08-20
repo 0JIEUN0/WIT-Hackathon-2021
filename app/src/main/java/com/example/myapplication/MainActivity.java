@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment() {
         binding.bottomMenu.setSelectedItemId(R.id.bottomMenu);
-        fragmentTranslation(new ItemFragment(), false);
+        fragmentTranslation(new HomeFragment(), false);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomMenu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

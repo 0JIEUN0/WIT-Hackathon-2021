@@ -64,7 +64,9 @@ public class ItemFragment extends Fragment {
             @Override
             public void onItemClick(ItemAdapter.ViewHolder holder, View view, int position) {
                 // Fragment transaction to details page
-                ((MainActivity)getActivity()).fragmentTranslation(new ItemDetailsFragment(), true);
+                ((MainActivity)getActivity()).fragmentTranslation(
+                        new ItemDetailsFragment(holder.getItem()),
+                        true);
             }
         });
         binding.recyclerItem.setAdapter(itemAdapter);

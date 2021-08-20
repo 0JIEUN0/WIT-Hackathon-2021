@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.myapplication.data.Item;
 import com.example.myapplication.databinding.RowFilterBinding;
@@ -48,6 +49,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
     public static class ViewHolder extends RecyclerView.ViewHolder {
         RowItemBinding binding;
         OnItemClickListener listener;
+        Item item;
 
         public ViewHolder(@NonNull RowItemBinding binding) {
             super(binding.getRoot());
@@ -61,6 +63,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
             this.binding = binding;
         }
         public void setItem(Item item) {
+            item = item;
             binding.title.setText(item.getTitle());
             binding.price.setText(item.getPrice());
             binding.rating.setText(String.valueOf(item.getRating()));
@@ -69,6 +72,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
         }
         public void setOnItemClickListener(OnItemClickListener listener){
             this.listener = listener;
+        }
+        public Item getItem(){
+            return item;
         }
     }
 
