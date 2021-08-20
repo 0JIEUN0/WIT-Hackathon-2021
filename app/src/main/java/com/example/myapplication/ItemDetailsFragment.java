@@ -55,6 +55,14 @@ public class ItemDetailsFragment extends Fragment {
                 getActivity().onBackPressed();
             }
         });
+        binding.homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)getActivity()).fragmentTranslation(
+                        new HomeFragment(), false
+                );
+            }
+        });
     }
 
     private void initData() {
