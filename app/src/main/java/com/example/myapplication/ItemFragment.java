@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.LayoutInflater;
@@ -12,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.myapplication.adapter.FilterAdapter;
+import com.example.myapplication.adapter.ItemAdapter;
+import com.example.myapplication.data.Item;
 import com.example.myapplication.databinding.FragmentItemBinding;
 
 public class ItemFragment extends Fragment {
@@ -33,6 +36,31 @@ public class ItemFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         initFilterRecyclerView();
+        initItemRecyclerView();
+    }
+
+    private void initItemRecyclerView() {
+        GridLayoutManager gridLayoutManager
+                = new GridLayoutManager(requireContext(), 2);
+        binding.recyclerItem.setLayoutManager(gridLayoutManager);
+        ItemAdapter itemAdapter = new ItemAdapter();
+        itemAdapter.addItem(new Item(
+                "삼다수/2L/12개", "10,000", 4.8f, "(9999+)",
+                getResources().getDrawable(R.drawable.water1)
+        ));
+        itemAdapter.addItem(new Item(
+                "아워홈 지리산수 핑크/2L/12개", "10,000", 4.7f, "(9999+)",
+                getResources().getDrawable(R.drawable.water2)
+        ));
+        itemAdapter.addItem(new Item(
+                "삼다수/500ml/12개", "5,000", 4.8f, "(9999+)",
+                getResources().getDrawable(R.drawable.water1)
+        ));
+        itemAdapter.addItem(new Item(
+                "아워홈 지리산수 핑크/500ml/30개", "6,500", 4.9f, "(9999+)",
+                getResources().getDrawable(R.drawable.water2)
+        ));
+        binding.recyclerItem.setAdapter(itemAdapter);
     }
 
     private void initFilterRecyclerView() {
