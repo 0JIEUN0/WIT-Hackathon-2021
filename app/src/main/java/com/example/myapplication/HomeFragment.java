@@ -42,6 +42,24 @@ public class HomeFragment extends Fragment {
                 );
             }
         });
+        binding.detailBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)getActivity()).fragmentTranslation(
+                        new DonationDatailFragment(),
+                        true
+                );
+            }
+        });
+        binding.detailBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)getActivity()).fragmentTranslation(
+                        new DirectDonationFragment(),
+                        true
+                );
+            }
+        });
     }
 
     @Override
