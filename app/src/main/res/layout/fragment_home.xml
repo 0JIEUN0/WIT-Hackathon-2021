@@ -117,7 +117,7 @@
                 </LinearLayout>
             </LinearLayout>
             <TextView
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -125,144 +125,172 @@
                 android:text="구매 카테고리"
                 />
             <LinearLayout
-                android:layout_marginTop="15dp"
-                android:layout_marginHorizontal="18dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <ImageButton
-                    android:id="@+id/waterBtn"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/water"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/sanitary_pad"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/pet"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/food"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginHorizontal="18dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="생수"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="생리대"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="애견제품"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="식품"/>
-            </LinearLayout>
-            <LinearLayout
                 android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="18dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/cloth"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/shoes"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/baby"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-                <ImageButton
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/food"
-                    android:backgroundTint="@color/white">
-                </ImageButton>
-
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/waterBtn"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/water"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="생수"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sanitary_pad"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="13sp"
+                        android:text="생리대"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pet"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="애견제품"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/food"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="식품"/>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_marginHorizontal="18dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="의류"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cloth"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="의류"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="신발"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/shoes"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="13sp"
+                        android:text="신발"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="유아제품"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/baby"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="유아제품"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="도서"/>
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/book"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="도서"/>
+                </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
