@@ -70,10 +70,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
-                android:text="누적 구매자"/>
+                android:text="누적 구매자"
+                />
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -98,7 +99,7 @@
                 android:text="누적 후원자"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -123,7 +124,7 @@
                 android:text="누적 기부액"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -148,7 +149,7 @@
                 android:text="기부 물 양"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -173,7 +174,7 @@
                 android:text="기부 생리대 수"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -198,7 +199,7 @@
                 android:text="기부 사료 양"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -223,7 +224,7 @@
                 android:text="기부 식사 끼니"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -248,7 +249,7 @@
                 android:text="기부 티셔츠 수"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -273,7 +274,7 @@
                 android:text="기부 신발 수"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -298,7 +299,7 @@
                 android:text="기부 신발 수"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -323,7 +324,7 @@
                 android:text="기부 분유 양"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -349,7 +350,7 @@
                 android:text="기부 도서수"/>
             <TextView
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#2CD38B"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
