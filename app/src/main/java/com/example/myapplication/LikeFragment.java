@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +32,8 @@ public class LikeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // code
+        binding.textView.setText("Change");
+        Log.d("this0-=-", binding.textView.getText().toString());
     }
 
     @Override

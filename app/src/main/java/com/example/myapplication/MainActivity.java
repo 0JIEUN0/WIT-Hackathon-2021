@@ -28,30 +28,32 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment() {
         binding.bottomMenu.setSelectedItemId(R.id.bottomMenu);
-        fragmentTranslation(new HomeFragment());
+        fragmentTranslation(new HomeFragment(), false);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomMenu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment fragment = null;
                 switch (item.getItemId()){
-                    case R.id.menuHome: fragmentTranslation(new HomeFragment()); break;
-                    case R.id.menuSearch: fragmentTranslation(new SearchFragment()); break;
-                    case R.id.menuLike: fragmentTranslation(new LikeFragment()); break;
-                    case R.id.menuList: fragmentTranslation(new CartListFragment()); break;
-                    case R.id.menuUser: fragmentTranslation(new MyPageFragment()); break;
+                    case R.id.menuHome: fragment = new HomeFragment(); break;
+                    case R.id.menuSearch: fragment = new SearchFragment(); break;
+                    case R.id.menuLike: fragment = new LikeFragment(); break;
+                    case R.id.menuList: fragment = new CartListFragment(); break;
+                    case R.id.menuUser: fragment = new MyPageFragment(); break;
                 }
+                fragmentTranslation(fragment, false);
                 return true;
             }
         });
     }
 
-    private void fragmentTranslation(Fragment requestFragment){
+    void fragmentTranslation(Fragment requestFragment, Boolean addBackStack){
         Log.d("MainActivity", requestFragment.getClass().toString());
         FragmentTransaction fragmentTranslation = getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, requestFragment);
-        fragmentTranslation.addToBackStack(null);
+        if(addBackStack) fragmentTranslation.addToBackStack(null);
         fragmentTranslation.commit();
     }
 }
