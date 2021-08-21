@@ -316,7 +316,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="160dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
                         android:scaleType="center"
                         android:src="@drawable/detail_donate1"
@@ -344,7 +344,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="160dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
                         android:scaleType="center"
                         android:src="@drawable/detail_donate2"
@@ -380,7 +380,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="160dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
                         android:scaleType="center"
                         android:src="@drawable/detail_donate3"
@@ -408,7 +408,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="160dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
                         android:scaleType="center"
                         android:src="@drawable/detail_donate4"
@@ -445,7 +445,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="160dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
                         android:scaleType="center"
                         android:src="@drawable/detail_donate5"
@@ -473,7 +473,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="160dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
                         android:scaleType="center"
                         android:src="@drawable/detail_donate6"
