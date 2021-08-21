@@ -9,7 +9,7 @@
     <!-- App Bar -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:baselineAligned="true"
         android:gravity="center_vertical">
